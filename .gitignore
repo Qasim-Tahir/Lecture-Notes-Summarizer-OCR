@@ -1,12 +1,25 @@
+# API Keys and Secrets
 .env
-pic_text.md
-pic_text.txt
-summary_notes.txt
-qa_pairs.txt
-extracted_text.txt
-extracted_data.json
-./pics
-./outputs
-./.venv
-./venv
+
+# Environments
+.venv/
+venv/
+ENV/
+
+# Project Specific Outputs
+pics/
+outputs/
+*.md
+*.txt
+*.json
+# Note: If you want to keep README.md, use the line below instead:
+# [!README.md]*.md
+
+# Python internal files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Specific file ignore
 viz.py
