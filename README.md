@@ -1,6 +1,6 @@
 # PDF & PPTX Lecture Notes Generator
 
-A powerful tool to convert academic PDFs and PPTX slides into structured, Notion-ready notes and exam-style Q&A pairs using OCR (Groq Vision) and LLMs (Llama-3).
+A powerful tool to convert academic PDFs and PPTX slides into structured, Notion-ready notes and exam-style Q&A pairs using OCR (Groq Vision) and LLMs (Llama-4).
 
 ## 🚀 Features
 
