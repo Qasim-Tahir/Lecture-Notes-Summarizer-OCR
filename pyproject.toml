@@ -1,0 +1,12 @@
+[project]
+name = "pdf-lecture-notes-generator"
+version = "0.1.0"
+description = "Convert PDF lecture slides to structured notes and Q&A using OCR and LLM"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pdf2image>=1.16.0",
+    "groq>=0.4.0",
+    "Pillow>=10.0.0",
+    "dotenv>=0.9.9",
+]

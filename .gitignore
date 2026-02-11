@@ -1,0 +1,12 @@
+.env
+pic_text.md
+pic_text.txt
+summary_notes.txt
+qa_pairs.txt
+extracted_text.txt
+extracted_data.json
+./pics
+./outputs
+./.venv
+./venv
+viz.py
