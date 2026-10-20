@@ -1,0 +1,7 @@
+[Unit]
+Description=Classroom lecture notes batch
+
+[Service]
+Type=oneshot
+WorkingDirectory=__PROJECT_DIR__
+ExecStart=__PROJECT_DIR__/test_env/bin/python __PROJECT_DIR__/classroom_batch.py --once --classroom-url https://classroom.google.com/u/2/c/ODc0NzkyNTIxMzM4 --cdp http://127.0.0.1:9222 --state __PROJECT_DIR__/state/classroom_batch.json --output-dir __PROJECT_DIR__/outputs/classroom-batch

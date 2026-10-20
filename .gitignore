@@ -12,8 +12,12 @@ outputs/
 *.md
 *.txt
 *.json
-# Note: If you want to keep README.md, use the line below instead:
-# [!README.md]*.md
+# Keep repository guidance and documentation under version control.
+!README.md
+!CLAUDE.md
+!claude.md
+!AGENTS.md
+!*.claude.md
 
 # Python internal files
 __pycache__/
@@ -23,3 +27,7 @@ __pycache__/
 
 # Specific file ignore
 viz.py
+
+# Local test venv and downloaded course material
+test_env/
+downloads/
