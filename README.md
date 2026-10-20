@@ -45,8 +45,6 @@ GROQ_API_KEY=your_groq_api_key_here
 
 Use `extract_lecture_sources.py` for offline native PDF/PPTX extraction, then `regenerate_notion_notes.py` for Groq-generated notes and Q&A. Use `robust_lecture_notes.py` when you need checkpointing or OCR fallback. `Book_processor.py` remains the broader processor for long documents and video inputs.
 
-The most robust script for processing large documents with CLI arguments.
-
 ```bash
 # Extract native slide text without an LLM
 python extract_lecture_sources.py outputs lecture.pdf slides.pptx
