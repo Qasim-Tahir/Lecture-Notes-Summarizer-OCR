@@ -4,7 +4,7 @@ from groq import Groq
 from dotenv import load_dotenv
 load_dotenv()
 # ---------------- CONFIG ----------------
-IMAGE_FOLDER = "path/to/images"#replace with your image folder path
+IMAGE_FOLDER = "/home/giga-niga/projects/Upwork/RAG/OCR/pics"#replace with your image folder path
 OUTPUT_FILE = "pic_text.txt"#replace with your output file path
 BATCH_SIZE = 3  # 3–5 is safe
 MODEL_NAME = "meta-llama/llama-4-scout-17b-16e-instruct"#replace with your model name
@@ -54,11 +54,11 @@ def extract_text_from_images(image_paths):
 image_files = sorted([
     os.path.join(IMAGE_FOLDER, f)
     for f in os.listdir(IMAGE_FOLDER)
-    if f.lower().startswith("pasted image") and f.lower().endswith(".png")
+    if f.lower().startswith("image") and f.lower().endswith(".png")
 ])
 
-# Ensure "pasted image.png" comes first
-image_files.sort(key=lambda x: (x != os.path.join(IMAGE_FOLDER, "pasted image.png"), x))
+# Ensure "image.png" comes first
+image_files.sort(key=lambda x: (x != os.path.join(IMAGE_FOLDER, "image.png"), x))
 
 # ---------------- OCR IN BATCHES ----------------
 all_text = ""
